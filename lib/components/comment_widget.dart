@@ -98,6 +98,11 @@ class _CommentWidgetState extends State<CommentWidget> {
                       }.withoutNulls,
                       extra: <String, dynamic>{
                         'user': rowUserRecord,
+                        kTransitionInfoKey: TransitionInfo(
+                          hasTransition: true,
+                          transitionType: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 0),
+                        ),
                       },
                     );
                   },
