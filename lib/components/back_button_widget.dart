@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'back_button_model.dart';
@@ -40,22 +41,40 @@ class _BackButtonWidgetState extends State<BackButtonWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-      child: FlutterFlowIconButton(
-        borderRadius: 3.0,
-        borderWidth: 0.0,
-        buttonSize: 40.0,
-        hoverColor: Color(0x3539D2C0),
-        icon: Icon(
-          Icons.arrow_back_sharp,
-          color: FlutterFlowTheme.of(context).primaryText,
-          size: 24.0,
+    return Row(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+          child: FlutterFlowIconButton(
+            borderRadius: 3.0,
+            borderWidth: 0.0,
+            buttonSize: 40.0,
+            hoverColor: Color(0x3539D2C0),
+            icon: Icon(
+              Icons.arrow_back_sharp,
+              color: FlutterFlowTheme.of(context).primaryText,
+              size: 24.0,
+            ),
+            onPressed: () async {
+              context.safePop();
+            },
+          ),
         ),
-        onPressed: () async {
-          context.safePop();
-        },
-      ),
+        Padding(
+          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+          child: Text(
+            'Back',
+            style: FlutterFlowTheme.of(context).labelMedium.override(
+                  fontFamily: 'Readex Pro',
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  fontWeight: FontWeight.w600,
+                ),
+          ),
+        ),
+      ],
     );
   }
 }

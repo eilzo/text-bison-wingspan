@@ -9,6 +9,7 @@ import '/components/responsive_spacer_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'post_model.dart';
@@ -89,8 +90,9 @@ class _PostWidgetState extends State<PostWidget> {
                       child: SizedBox(
                         width: 50.0,
                         height: 50.0,
-                        child: CircularProgressIndicator(
+                        child: SpinKitChasingDots(
                           color: FlutterFlowTheme.of(context).primary,
+                          size: 50.0,
                         ),
                       ),
                     );
@@ -298,8 +300,9 @@ class _PostWidgetState extends State<PostWidget> {
                                                                             height:
                                                                                 50.0,
                                                                             child:
-                                                                                CircularProgressIndicator(
+                                                                                SpinKitChasingDots(
                                                                               color: FlutterFlowTheme.of(context).primary,
+                                                                              size: 50.0,
                                                                             ),
                                                                           ),
                                                                         );
