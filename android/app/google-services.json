@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "63930386554",
+    "project_id": "textbison",
+    "storage_bucket": "textbison.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63930386554:android:29f1ff6dd9db0c7a0e93c3",
+        "android_client_info": {
+          "package_name": "com.flutterflow.textbisonshowcase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63930386554-nf01vbjhfm0rtdghm507dra293kgd973.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAVlj5kvT3pp4bAXYyGHDQcdVoMXJkERk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63930386554-nf01vbjhfm0rtdghm507dra293kgd973.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "63930386554-5n7rrhj3qkjm97i1o5jur2k23i87kr7b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.textbisonshowcase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
