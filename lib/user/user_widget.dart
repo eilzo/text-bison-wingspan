@@ -83,7 +83,7 @@ class _UserWidgetState extends State<UserWidget> with TickerProviderStateMixin {
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: AppBar(
               backgroundColor: FlutterFlowTheme.of(context).primary,
-              automaticallyImplyLeading: true,
+              automaticallyImplyLeading: false,
               actions: [],
               flexibleSpace: FlexibleSpaceBar(
                 background: wrapWithModel(
