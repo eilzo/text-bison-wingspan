@@ -46,33 +46,27 @@ class _BackButtonWidgetState extends State<BackButtonWidget> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-          child: FlutterFlowIconButton(
-            borderRadius: 3.0,
-            borderWidth: 0.0,
-            buttonSize: 40.0,
-            hoverColor: Color(0x3539D2C0),
-            icon: Icon(
-              Icons.arrow_back_sharp,
-              color: FlutterFlowTheme.of(context).primaryText,
-              size: 24.0,
-            ),
-            onPressed: () async {
-              context.safePop();
-            },
+        FlutterFlowIconButton(
+          borderRadius: 3.0,
+          borderWidth: 0.0,
+          buttonSize: 40.0,
+          hoverColor: Color(0x3539D2C0),
+          icon: Icon(
+            Icons.arrow_back_sharp,
+            color: FlutterFlowTheme.of(context).primaryText,
+            size: 24.0,
           ),
+          onPressed: () async {
+            context.safePop();
+          },
         ),
-        Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
-          child: Text(
-            'Back',
-            style: FlutterFlowTheme.of(context).labelMedium.override(
-                  fontFamily: 'Readex Pro',
-                  color: FlutterFlowTheme.of(context).primaryText,
-                  fontWeight: FontWeight.w600,
-                ),
-          ),
+        Text(
+          'Back',
+          style: FlutterFlowTheme.of(context).labelMedium.override(
+                fontFamily: 'Readex Pro',
+                color: FlutterFlowTheme.of(context).primaryText,
+                fontWeight: FontWeight.w600,
+              ),
         ),
       ],
     );
