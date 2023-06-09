@@ -1,5 +1,0 @@
-steps:
-  - name: docker.io/elliotsayes/flutter-web:latest
-    args: ["build", "web"]
-  - name: gcr.io/cloud-builders/gsutil
-    args: [ "-m", "rsync", "-r", "-c", "-d", "build/web", "gs://ff-text-bison-eilidh" ]
